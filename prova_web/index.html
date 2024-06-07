@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+
+    <title>Prova de Software Web</title>
+</head>
+
+<body>
+    <h2>Formulário</h2>
+
+    <form action="#" method="POST">
+
+    <label for="nome">Nome:</label><br>
+    <input type="text" id="nome" name="nome" required><br><br>
+
+    <label for="matricula">Matrícula:</label><br>
+    <input type="text" id="matricula" name="matricula" required><br><br>
+
+    <label for="nota1"> Inseira a nota 1:</label><br>
+    <input type="number" id="nota1" name="nota1" step="0.01" required><br><br>
+
+    <label for="nota2">Insira a nota 2:</label><br>
+    <input type="number" id="nota2" name="nota2" step="0.01" required><br><br>
+
+    <input type="button" value="Enviar" onclick="adicionarRegistro()"><br><br>
+
+    </form>
+
+    <h2>Tabela de Alunos</h2>
+
+    <table id="tabela">
+
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Matrícula</th>
+                <th>Nota 1</th>
+                <th>Nota 2</th>
+                <th>Média</th>
+                <th>Situação</th>
+            </tr>
+        </thead>
+        
+    <tbody id="Dados_da_tabela">
+    </tbody>
+
+</table>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
